@@ -2,7 +2,7 @@ import React, { useState, useCallback } from "react";
 import "./App.css";
 
 import Playlist from "../Playlist/Playlist";
-import SearchBar from "../SearchBar/SearchBar";
+import Search from "../Search/Search";
 import SearchResults from "../SearchResults/SearchResults";
 import Spotify from "../../util/Spotify";
 
@@ -49,7 +49,7 @@ const App = () => {
         <span className="highlight">M e l o d y </span> M i x e r
       </h1>
       <div className="App">
-        <SearchBar onSearch={search} />
+        <Search onSearch={search} />
         <div className="App-playlist">
           <SearchResults searchResults={searchResults} onAdd={addTrack} />
           <Playlist
